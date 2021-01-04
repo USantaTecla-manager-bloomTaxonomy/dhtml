@@ -1,0 +1,23 @@
+<html>
+<head>
+ <meta charset="UTF-8">
+ <script src="codigo.js"></script> 
+<link rel="stylesheet" type="text/css" href="Estilo.css">
+<title>Cuestiones-Maestro</title>
+</head>
+<body onload="listaenunciadomaestro();">
+    <h1>Cuestiones del maestro</h1>
+    <div id="conjuntoenunciado">
+    </div>	
+    <form id="nuevacuestion" action="./cuestionMaestro.html" method="get">
+        <input id="cajatexto"/>
+        <input type="submit" value="Nueva cuestión" onclick="almacenaenunciado()">
+    </form>
+    <form  action="./login.html" method="get">
+        <input type="submit" value="Salir">
+    </form>
+<footer>
+  TDW-2017/2018
+</footer>
+</body>
+</html>
