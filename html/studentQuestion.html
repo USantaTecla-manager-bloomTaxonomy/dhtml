@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="../js/logic.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Cuestion-Aprendiz</title>
+</head>
+
+<body onload=cargacuestionalumno();>
+    <h1>Cuestion</h1>
+    <div>
+        Enunciado:
+        <p id="enunciadoalumno">Pregunta no cargada</p>
+    </div>
+    <div id="propuestadesolucion">
+        Propuesta de solucion
+        <input type="text" id="solucion propuesta" />
+        <input type="button" value="Enviar solucion" onclick="muestrasoluciones()" />
+    </div>
+    <div id="solucionesalumno">
+
+    </div>
+    <form action="./studentQuestions.html" method="get">
+        <input type="submit" value="Cerrar cuestion" onclick="guardardatosalumno()">
+    </form>
+    <footer>
+        TDW-2017/2018
+    </footer>
+</body>
+
+</html>

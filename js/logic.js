@@ -1,5 +1,5 @@
 
-function cargar() {
+function load() {
     var datos = { 
         usuarios : [
             {clave : 1, nombre: "m", contraseña: "m", tipo: "maestro"},
@@ -27,14 +27,14 @@ function validacion(){
     if (usuario == null){
         nombre.value = "";
         contraseña.value = "";
-        login.action = "./login.html";
+        login.action = "./index.html";
     } else {
         window.localStorage.setItem("usuarioRegistrado", JSON.stringify(usuario));
         var login = document.getElementById("login");
         if (usuario.tipo == "maestro"){
-            login.action = "./cuestionesMaestro.html";
+            login.action = "./html/teacherQuestions.html";
         } else {
-            login.action = "./cuestionesAprendiz.html";
+            login.action = "./html/studentQuestions.html";
         }
     }
     return usuario != null;
@@ -58,7 +58,7 @@ function listaenunciadomaestro(){
         conjuntoenunciado.appendChild(div);
         var a=document.createElement("a");
         div.appendChild(a);
-        a.setAttribute("href","./cuestionMaestro.html");
+        a.setAttribute("href","./html/teacherQuestion.html");
         a.setAttribute("onclick","cuestionlistado(event)");
         a.innerHTML=cuestion.enunciado;
         var input=document.createElement("input");
@@ -102,7 +102,7 @@ function listadoenunciadosalumno(){
             conjuntoenunciado.appendChild(div);
             var a=document.createElement("a");
             div.appendChild(a);
-            a.setAttribute("href","./cuestionAprendiz.html");
+            a.setAttribute("href","./html/studentQuestion.html");
             a.innerHTML=cuestion.enunciado;
             a.setAttribute("onclick","cuestionlistadoalumno(event)");
         }
