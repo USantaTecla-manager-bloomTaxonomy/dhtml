@@ -1,0 +1,110 @@
+
+#solucionesalumno  {
+    display: none;
+    position: relative;
+    left: 20px;
+    border: 1px solid white;
+   
+    
+}
+
+.razonamientoalumno {
+    display: none;
+    position: relative;
+    left: 50px;
+    background-color: #91bbff;
+    
+}
+
+.razonamientos{
+     display: none;
+     position: relative;
+    left: 50px;
+    
+}
+
+.todoslosrazonamientos{
+  position: relative;
+    left: 60px;
+    border: 1px solid white;
+     background-color: #91bbff;
+}
+
+.Propuestarazonamientoalumno{
+     position: relative;
+    left: 60px;
+    border: 1px solid white;
+     background-color: #83b1fc;
+}
+
+.error{
+    
+    position: relative;
+    left: 30px;
+    background-color: #9ec3ff;
+}
+
+a:link {
+    color: red;
+}
+
+
+a:visited {
+    color: floralwhite;
+}
+
+
+a:hover {
+    color: hotpink;
+}
+
+
+a:active {
+    color: orangered;
+}
+ 
+input[type="text"] {
+  border: 2px solid #b7b7b7;
+  background: rgba(227,245,252,1);
+    text-overflow: clip;
+  
+}
+
+input[type="password"] {
+  border: 2px solid #b7b7b7;
+  background: rgba(227,245,252,1);
+    text-overflow: clip;
+  
+}
+
+input[type="button"]{
+border: 2px solid #371b9b;
+font: normal 16px/normal Impact, Charcoal, sans-serif;
+background-color: #a2c0ef;
+}
+
+input[type="submit"]{
+border: 2px solid #371b9b;
+
+font: normal 16px/normal Impact, Charcoal, sans-serif;
+background-color: #a2c0ef;
+}
+
+body {
+    background-color:#669ef9;
+}
+
+h1{
+    background-color: #0b63ef;
+    border: 4px solid #021d47;
+    font: normal 25px/1 Impact, Charcoal, sans-serif;
+    color: white;
+}
+
+footer{
+     background-color: #0b63ef;
+    border: 4px solid #021d47;
+    font: normal 20px/1 Impact, Charcoal, sans-serif;
+    color: white;
+}
+}
